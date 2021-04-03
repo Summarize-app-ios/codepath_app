@@ -19,7 +19,7 @@ What is needed for a runnable/publishible app
 Original App Design Project - README Template
 ===
 
-# APP_NAME_HERE
+# NewsMe
 
 ## Table of Contents
 1. [Overview](#Overview)
