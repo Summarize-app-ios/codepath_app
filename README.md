@@ -1,21 +1,3 @@
-**Summarize app**
-
-What is needed for a runnable/publishible app
-
-    view controllers
-- lauch page
-- user login page
-- home page 
-    - includes trending page
-    - includes personilized user page
-- import page
-- summerizer page (that summerizes the media)
-- summerized page (that displayes the media)
-- articles page
-- podcast page
-- audiobooks page
-
-
 Original App Design Project - README Template
 ===
 
@@ -46,17 +28,36 @@ Original App Design Project - README Template
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* [launch page]
+* [user registration page]
+* [user login page]
+* [home page 
+    - includes trending page
+    - includes personilized user page]
+* [import media page]
+* [summerizer page (that summerizes the media)]
+* [summerized page (that displayes the media)]
+* [articles tab]
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* [users can choose media outlets that they perfer to personalize their user page]
+* [audiobooks tab]
+* [podcast tab]
+* [comment section]
+* [setting page]
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
+* [Login page]
+* [registration page]
+* [Home page]
+* [Import media page]
+* [Summarizer page (which will take the media and show option to summarize)]
+* [Summarized page (which will show the media summarized with those options)]
+* [Article page]
+* [Trending page]
+* [Personalized user page]
    * [list associated required story here]
    * ...
 * [list second screen here]
@@ -67,22 +68,31 @@ Original App Design Project - README Template
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* [articles tab]
+* [audiobooks tab]
+* [audiobooks tab]
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
+* [Login page]
+   * [Home page]
+* [register page]
+   * [Home page]
+* [home page]
+   * [trending page]
+   * [personalized user page]
+   * [import page]
+   * [Summarizer page]
+   * [article page]
+* [Summarizer page]
+   * [Summarized page]
 * [list second screen here]
    * [list screen navigation here]
    * ...
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://imgur.com/a/eOyLK13" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
