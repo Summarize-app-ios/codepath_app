@@ -90,9 +90,10 @@ Original App Design Project - README Template
    * [list screen navigation here]
    * ...
 
+
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="https://imgur.com/gallery/eOyLK13" width=600>
+<img width="377" alt="Screen Shot 2021-04-03 at 8 35 48 PM" src="https://user-images.githubusercontent.com/60724653/113495078-c84a3100-94bc-11eb-95b9-8ffb40a31b21.png">
 
 ### [BONUS] Digital Wireframes & Mockups
 
