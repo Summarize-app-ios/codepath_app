@@ -93,7 +93,7 @@ Original App Design Project - README Template
 
 ## Wireframes
 <img width="377" alt="Screen Shot 2021-04-03 at 8 35 48 PM" src="https://user-images.githubusercontent.com/60724653/113495078-c84a3100-94bc-11eb-95b9-8ffb40a31b21.png">
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FSJyByJyiToCHia6SDeOZdn%2FCodePath-project-wireframe%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+https://www.figma.com/file/SJyByJyiToCHia6SDeOZdn/CodePath-project-wireframe?node-id=0%3A1
 
 ### [BONUS] Digital Wireframes & Mockups
 
