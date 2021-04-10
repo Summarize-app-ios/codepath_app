@@ -102,6 +102,10 @@ https://www.figma.com/file/SJyByJyiToCHia6SDeOZdn/CodePath-project-wireframe?nod
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
 [Add table of models]
 ### Networking
 - [Add list of network requests by screen ]
