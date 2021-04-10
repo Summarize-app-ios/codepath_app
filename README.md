@@ -102,13 +102,82 @@ https://www.figma.com/file/SJyByJyiToCHia6SDeOZdn/CodePath-project-wireframe?nod
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-Articles:
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
-[Add table of models]
+
+## User Schema
+```js
+const UserSchema = new Schema({
+    firstName: { type: String, required: true },
+    lastName: { type: String, required: true },
+    email: { type: String, required: true },
+    password: { type: String, required: true, lowercase: false },
+    userName: { type: String, required: true },
+    preferences: { type: [String], required: false}
+})
+```
+
+## Article Schema
+```js
+const ArticleSchema = new Schema({
+    text: { type: String, required: true },
+    author: { type: String, required: true },
+    dateCreated: {type: Date , required: true},
+    summary: { 
+       summaryText: {type: String},
+       biasAnalysis: {type: String},
+       keywords: {type: String}
+    },
+    link: {type: String, required: false},
+    comments:[
+      {type: Schema.Types.ObjectId, ref: 'Comment'}
+    ],
+    topics: {type: [String], required: true}
+})
+```
+
+## Comment Schema
+```js
+const CommentSchema = new Schema({
+    text: { type: String, required: true },
+    author: { type: String, required: true },
+    dateCreated: {type: Date , required: true}
+})
+```
+
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+- (GET) /login -> login page
+- (POST) /register -> register page
+- (GET) /articles -> trending page is shown
+- (GET) /articles/personal -> personalized page is shown
+- (POST) /articles/import -> imports an article that you want page 
+
+## Queries
+
+```js
+router.get('/', async (req, res, next) => {
+	try {
+		const articles = await Article.find({}, {}).exec()
+		res.send(articles)
+	} catch (err) {
+		logger.error(err)
+		next(err)
+	}
+})
+```
+
+```js
+router.get('/preferences:userID', async (req, res, next) => {
+	User.findByID({"_id": req.params.userID})
+   .then(user => {
+      let userPreferences = user.preferences;
+      Article.find({topics: {"$in": userPreferences} })
+      .then(articles => {
+         res.send(articles);
+      })
+   })
+})
+```
