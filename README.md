@@ -102,6 +102,7 @@ https://www.figma.com/file/SJyByJyiToCHia6SDeOZdn/CodePath-project-wireframe?nod
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
+Articles:
 | Syntax      | Description |
 | ----------- | ----------- |
 | Header      | Title       |
