@@ -18,6 +18,8 @@ mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedT
 
 const articlesRouter = require("./routes/articles");
 
+app.use('/articles', articlesRouter)
+
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 });
