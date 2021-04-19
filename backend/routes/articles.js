@@ -13,6 +13,7 @@ articlesRouter.route('/').get((req, res) => {
       .then(response => {
         console.log(response);
         let articles = response["articles"];
+        newArticlesArr = [];
         for(let i = 0; i < articles.length; i++){
             text = articles[i].content;
             author = articles[i].author;
@@ -30,10 +31,16 @@ articlesRouter.route('/').get((req, res) => {
                 title
             });
 
-            newEmployee.save()
-            .then(() => res.json("New article added"))
-            .catch(err => res.status(400)).json("Error: " + err);
+            newArticlesArr.push(newArticle);
         }
+
+        Article.insertMany(newArticlesArr)
+        .then(()=> {
+            console.log("new articles inserted")
+        })
+        .catch((error) => {
+            console.log(error);
+        })
 
       });
 })
