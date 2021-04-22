@@ -60,6 +60,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleShadowColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5hN-MD-tLl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwt-wf-JxD">
                                 <rect key="frame" x="284" y="443" width="100" height="90"/>
@@ -71,6 +74,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1RI-bd-g8m"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -94,10 +100,39 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hwt-wf-JxD" secondAttribute="trailing" constant="30" id="w3N-fH-Wpe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="yjF-co-aF5" id="QDN-Nv-rrO"/>
+                        <outlet property="userNameField" destination="ojQ-OG-3pM" id="gyz-1z-qmk"/>
+                        <segue destination="hRs-N2-eV3" kind="presentation" identifier="success" id="aFi-x0-eNj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23.188405797101453" y="59.598214285714285"/>
+            <point key="canvasLocation" x="-19" y="59"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="z5X-Ie-Slc">
+            <objects>
+                <viewController id="hRs-N2-eV3" customClass="HomeViewController" customModule="Summarize_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s4N-pO-qEw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBf-SY-sWw">
+                                <rect key="frame" x="161" y="110" width="92" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="V3V-ps-PQn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UFk-SY-Wp0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704.34782608695662" y="58.928571428571423"/>
         </scene>
     </scenes>
     <resources>

@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         let username = userNameField.text!
         let password = passwordField.text!
         
+        self.performSegue(withIdentifier: "success", sender: nil)
         
     }
     
@@ -32,7 +33,7 @@ class ViewController: UIViewController {
         let username = userNameField.text
         let password = passwordField.text
         
-
+        self.performSegue(withIdentifier: "success", sender: nil)
     
     }
 
