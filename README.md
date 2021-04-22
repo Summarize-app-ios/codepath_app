@@ -34,8 +34,8 @@ Original App Design Project - README Template
 * [ ] [trending page]
 * [ ] [personilized user page]
 * [ ] [import media page]
-* [ ] [summerizer page (that summerizes the media)]
-* [ ] [summerized page (that displayes the media)]
+* [ ] [summerizer page (that has setting to summerizes the media)]
+* [ ] [summerized page (that displayes the media summarized)]
 
 
 **Optional Nice-to-have Stories**
