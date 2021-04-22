@@ -28,16 +28,16 @@ Original App Design Project - README Template
 
 **Required Must-have Stories**
 
-* [launch page]
-* [user registration page]
-* [user login page]
-* [home page 
+[] [launch page]
+[] [user registration page]
+[] [user login page]
+[] [home page 
     - includes trending page
     - includes personilized user page]
-* [import media page]
-* [summerizer page (that summerizes the media)]
-* [summerized page (that displayes the media)]
-* [articles tab]
+[] [import media page]
+[] [summerizer page (that summerizes the media)]
+[] [summerized page (that displayes the media)]
+[] [articles tab]
 
 **Optional Nice-to-have Stories**
 
@@ -181,3 +181,6 @@ router.get('/preferences:userID', async (req, res, next) => {
    })
 })
 ```
+
+## Milestone 1
+<img src='http://g.recordit.co/K57Xa5xRlW.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
