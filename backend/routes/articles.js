@@ -57,6 +57,10 @@ articlesRouter.route('/').get( async (req, res) => {
         Article.insertMany(newArticlesArr)
         .then(()=> {
             res.status(200).json("new articles inserted");
+<<<<<<< HEAD
+
+=======
+>>>>>>> e91f424764bf5eabff958d351e6be20b5c651324
         })
         .catch((error) => {
             console.log(error);
