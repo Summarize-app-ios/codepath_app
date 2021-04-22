@@ -28,16 +28,16 @@ Original App Design Project - README Template
 
 **Required Must-have Stories**
 
-[] [launch page]
-[] [user registration page]
-[] [user login page]
-[] [home page 
+* [x] [launch page]
+* [x] [user registration page]
+* [x] [user login page]
+* [ ] [home page 
     - includes trending page
     - includes personilized user page]
-[] [import media page]
-[] [summerizer page (that summerizes the media)]
-[] [summerized page (that displayes the media)]
-[] [articles tab]
+* [ ] [import media page]
+* [ ] [summerizer page (that summerizes the media)]
+* [ ] [summerized page (that displayes the media)]
+* [ ] [articles tab]
 
 **Optional Nice-to-have Stories**
 
