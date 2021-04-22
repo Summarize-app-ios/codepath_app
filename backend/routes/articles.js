@@ -36,7 +36,8 @@ articlesRouter.route('/').get((req, res) => {
 
         Article.insertMany(newArticlesArr)
         .then(()=> {
-            console.log("new articles inserted")
+            res.status(200).json("new articles inserted");
+
         })
         .catch((error) => {
             console.log(error);
