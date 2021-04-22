@@ -3,21 +3,21 @@ let User = require('../models/UserSchema');
 
 
 userRouter.route('/createUser').post((req, res) => {
-    let username = req.body.username;
-    let password = req.body.username;
-    let email = req.body.email;
-    let firstName = req.body.firstName;
-    let lastName = req.body.firstName;
+    const userName = req.body.userName;
+    const password = req.body.password;
+    const email = req.body.email;
+    const firstName = req.body.firstName;
+    const lastName = req.body.lastName;
 
     const newUser = new User({
-        username,
+        userName,
         password,
         email,
         firstName,
         lastName
     });
 
-    User.save(newUser)
+    newUser.save()
     .then(()=> {
         res.status(200).json("new user added");
     })
