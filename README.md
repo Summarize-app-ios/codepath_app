@@ -31,13 +31,12 @@ Original App Design Project - README Template
 * [x] [launch page]
 * [x] [user registration page]
 * [x] [user login page]
-* [ ] [home page 
-    - includes trending page
-    - includes personilized user page]
+* [ ] [trending page]
+* [ ] [personilized user page]
 * [ ] [import media page]
 * [ ] [summerizer page (that summerizes the media)]
 * [ ] [summerized page (that displayes the media)]
-* [ ] [articles tab]
+
 
 **Optional Nice-to-have Stories**
 
