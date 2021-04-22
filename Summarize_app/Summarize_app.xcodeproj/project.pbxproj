@@ -16,6 +16,8 @@
 		802615F7261931820090511E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 802615F5261931820090511E /* LaunchScreen.storyboard */; };
 		80261602261931820090511E /* Summarize_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80261601261931820090511E /* Summarize_appTests.swift */; };
 		8026160D261931820090511E /* Summarize_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8026160C261931820090511E /* Summarize_appUITests.swift */; };
+		80472669263204F1007AAF43 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80472668263204F1007AAF43 /* TrendingViewController.swift */; };
+		8047266E26320507007AAF43 /* PersonalizedUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8047266D26320507007AAF43 /* PersonalizedUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		80261608261931820090511E /* Summarize_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Summarize_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8026160C261931820090511E /* Summarize_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summarize_appUITests.swift; sourceTree = "<group>"; };
 		8026160E261931820090511E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80472668263204F1007AAF43 /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
+		8047266D26320507007AAF43 /* PersonalizedUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizedUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				802615F5261931820090511E /* LaunchScreen.storyboard */,
 				802615F8261931820090511E /* Info.plist */,
 				8002835E263108B900D19EDF /* HomeViewController.swift */,
+				80472668263204F1007AAF43 /* TrendingViewController.swift */,
+				8047266D26320507007AAF43 /* PersonalizedUserViewController.swift */,
 			);
 			path = Summarize_app;
 			sourceTree = "<group>";
@@ -263,8 +269,10 @@
 			files = (
 				802615EF261931810090511E /* ViewController.swift in Sources */,
 				802615EB261931810090511E /* AppDelegate.swift in Sources */,
+				80472669263204F1007AAF43 /* TrendingViewController.swift in Sources */,
 				802615ED261931810090511E /* SceneDelegate.swift in Sources */,
 				8002835F263108B900D19EDF /* HomeViewController.swift in Sources */,
+				8047266E26320507007AAF43 /* PersonalizedUserViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
