@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
@@ -23,6 +24,15 @@ class ViewController: UIViewController {
     @IBAction func signIn(_ sender: Any) {
         let username = userNameField.text!
         let password = passwordField.text!
+
+        
+        
+        // Making a GET request
+        
+        AF.request("http://127.0.0.1:5000/user/login/:\(username):\(password)").response {
+            response in debugPrint(response)
+        }
+        
 
         self.performSegue(withIdentifier: "success", sender: nil)
 
