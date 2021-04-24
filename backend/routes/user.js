@@ -28,7 +28,7 @@ userRouter.route('/createUser').post((req, res) => {
 })
 
 
-userRouter.route('/login/:username:password').post((req, res) => {
+userRouter.route('/login/:username:password').get((req, res) => {
     let username = req.params.username;
     let password = req.params.password;
 
