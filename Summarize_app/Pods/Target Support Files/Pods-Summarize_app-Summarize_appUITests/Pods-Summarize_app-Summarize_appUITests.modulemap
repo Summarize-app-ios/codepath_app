@@ -1,0 +1,6 @@
+framework module Pods_Summarize_app_Summarize_appUITests {
+  umbrella header "Pods-Summarize_app-Summarize_appUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
