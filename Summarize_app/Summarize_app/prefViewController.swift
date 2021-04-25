@@ -17,7 +17,7 @@ class prefViewController: UIViewController {
     
     @IBOutlet weak var getTags: UIView!
     
-    
+    var prefArray = ["Tech", "Design", "Writing", "Social Media"]
     
     var settagCollection = TKCollectionView()
     var gettagCollection = TKCollectionView()
@@ -51,6 +51,7 @@ class prefViewController: UIViewController {
     }
 
     @IBAction func onSubmit(_ sender: Any) {
+        print(prefArray)
         performSegue(withIdentifier: "registersubmit", sender: nil)
     }
     
@@ -71,10 +72,14 @@ extension prefViewController: TKCollectionViewDelegate {
 
     func tagIsBeingAdded(name: String?) {
         // Example: save testCollection.tags to UserDefault
+        prefArray.append(name!)
         print("added \(name!)")
     }
     
     func tagIsBeingRemoved(name: String?) {
+        if let index = prefArray.firstIndex(of: name!) {
+          prefArray.remove(at: index) // array is now ["world"]
+        }
         print("removed \(name!)")
     }
 }
