@@ -17,6 +17,8 @@ class prefViewController: UIViewController {
     
     @IBOutlet weak var getTags: UIView!
     
+    
+    
     var settagCollection = TKCollectionView()
     var gettagCollection = TKCollectionView()
     
@@ -48,6 +50,11 @@ class prefViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func onSubmit(_ sender: Any) {
+        performSegue(withIdentifier: "registersubmit", sender: nil)
+    }
+    
+    
     /*
     // MARK: - Navigation
 

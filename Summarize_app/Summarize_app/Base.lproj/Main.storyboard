@@ -633,6 +633,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lp9-94-NVN">
+                                <rect key="frame" x="181" y="742" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="onSubmit:" destination="I2t-Xz-I5g" eventType="touchUpInside" id="uey-jZ-ecw"/>
+                                    <segue destination="M0L-c8-FwM" kind="presentation" identifier="registersubmit" id="7kK-W9-SCN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wti-Rw-bFb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -927,7 +936,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9UP-Ng-Z2y"/>
+        <segue reference="7kK-W9-SCN"/>
         <segue reference="eu0-Dp-Yas"/>
     </inferredMetricsTieBreakers>
     <resources>
