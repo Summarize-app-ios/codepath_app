@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1C4F855F6E5D2106ECD033B1AA7DBBBF"
-               BuildableName = "Pods-Summarize_app-Summarize_appUITests.framework"
-               BlueprintName = "Pods-Summarize_app-Summarize_appUITests"
+               BlueprintIdentifier = "16DB0A490A61C833A70BDE2217E0D5FD"
+               BuildableName = "WaterfallGrid.framework"
+               BlueprintName = "WaterfallGrid"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

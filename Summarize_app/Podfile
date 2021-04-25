@@ -9,6 +9,7 @@ target 'Summarize_app' do
   pod 'Alamofire', '~> 5.0.0-rc.2'
   pod 'TaggerKit'
   pod 'SwiftyJSON', '~> 4.0'
+  pod 'WaterfallGrid', '~> 1.0.0'
 
   target 'Summarize_appTests' do
     inherit! :search_paths
