@@ -1,16 +1,24 @@
 PODS:
   - Alamofire (5.0.5)
+  - SwiftyJSON (4.3.0)
+  - TaggerKit (0.6.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.2)
+  - SwiftyJSON (~> 4.0)
+  - TaggerKit
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - SwiftyJSON
+    - TaggerKit
 
 SPEC CHECKSUMS:
   Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  TaggerKit: e88422048a006b409a37b37f24785dfcca69b5b2
 
-PODFILE CHECKSUM: 7f4a3b07cc1515c16325808d31182c2cf0cd51fd
+PODFILE CHECKSUM: 8e8f0c9b46bddea2056d9f3f06fdf2bce4804b53
 
 COCOAPODS: 1.10.1

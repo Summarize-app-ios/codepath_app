@@ -1,2 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-Summarize_app-Summarize_appUITests/Pods-Summarize_app-Summarize_appUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
+${BUILT_PRODUCTS_DIR}/TaggerKit/TaggerKit.framework

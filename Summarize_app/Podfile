@@ -7,6 +7,8 @@ target 'Summarize_app' do
 
   # Pods for Summarize_app
   pod 'Alamofire', '~> 5.0.0-rc.2'
+  pod 'TaggerKit'
+  pod 'SwiftyJSON', '~> 4.0'
 
   target 'Summarize_appTests' do
     inherit! :search_paths

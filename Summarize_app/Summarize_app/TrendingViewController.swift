@@ -15,6 +15,13 @@ class TrendingViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func onLogout(_ sender: Any) {
+        defaults.set(0, forKey: "ID")
+        performSegue(withIdentifier: "logout", sender: nil)
+        print(defaults.value(forKey: "ID"))
+    }
+    
 
     /*
     // MARK: - Navigation

@@ -32,8 +32,13 @@ class LoginViewController: UIViewController {
         
         // Making a GET request
         
-        AF.request("http://127.0.0.1:5000/user/login/:\(user):\(pass)").response {
-            response in debugPrint(response)
+        AF.request("http://127.0.0.1:5000/user/login/\(user)/\(pass)").responseJSON {response in
+//            debugPrint(response)
+            if let data = response.data {
+                let json = String(data: data, encoding: String.Encoding.utf8)
+                defaults.set(json, forKey: "ID")
+                print(json)
+            }
             self.performSegue(withIdentifier: "success", sender: nil)
         }
         
