@@ -3,16 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2A44D8509478A25ECEFF7D5A /* Pods_Summarize_app_Summarize_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A46D26CD0CCDF6B3A70FD4 /* Pods_Summarize_app_Summarize_appUITests.framework */; };
 		74F9FA601E24BD13433F250B /* Pods_Summarize_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FFA88F3225AD15D7AA69DB /* Pods_Summarize_app.framework */; };
 		8002835F263108B900D19EDF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8002835E263108B900D19EDF /* HomeViewController.swift */; };
+		80051E1B2634FC7500A04C52 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80051E1A2634FC7500A04C52 /* LoginViewController.swift */; };
+		80051E212634FC9000A04C52 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80051E202634FC9000A04C52 /* RegisterViewController.swift */; };
+		80051E2C2635249B00A04C52 /* prefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80051E2B2635249B00A04C52 /* prefViewController.swift */; };
 		802615EB261931810090511E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802615EA261931810090511E /* AppDelegate.swift */; };
 		802615ED261931810090511E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802615EC261931810090511E /* SceneDelegate.swift */; };
-		802615EF261931810090511E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802615EE261931810090511E /* ViewController.swift */; };
 		802615F2261931810090511E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 802615F0261931810090511E /* Main.storyboard */; };
 		802615F4261931820090511E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 802615F3261931820090511E /* Assets.xcassets */; };
 		802615F7261931820090511E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 802615F5261931820090511E /* LaunchScreen.storyboard */; };
@@ -48,10 +50,12 @@
 		50FFA88F3225AD15D7AA69DB /* Pods_Summarize_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Summarize_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69C8A4D58B778BC094E9DA31 /* Pods-Summarize_appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Summarize_appTests.release.xcconfig"; path = "Target Support Files/Pods-Summarize_appTests/Pods-Summarize_appTests.release.xcconfig"; sourceTree = "<group>"; };
 		8002835E263108B900D19EDF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		80051E1A2634FC7500A04C52 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		80051E202634FC9000A04C52 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		80051E2B2635249B00A04C52 /* prefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prefViewController.swift; sourceTree = "<group>"; };
 		802615E7261931810090511E /* Summarize_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Summarize_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		802615EA261931810090511E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		802615EC261931810090511E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		802615EE261931810090511E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		802615F1261931810090511E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		802615F3261931820090511E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		802615F6261931820090511E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -107,7 +111,6 @@
 				046FE053A30C97CE0382A34B /* Pods-Summarize_appTests.debug.xcconfig */,
 				69C8A4D58B778BC094E9DA31 /* Pods-Summarize_appTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -138,7 +141,6 @@
 			children = (
 				802615EA261931810090511E /* AppDelegate.swift */,
 				802615EC261931810090511E /* SceneDelegate.swift */,
-				802615EE261931810090511E /* ViewController.swift */,
 				802615F0261931810090511E /* Main.storyboard */,
 				802615F3261931820090511E /* Assets.xcassets */,
 				802615F5261931820090511E /* LaunchScreen.storyboard */,
@@ -146,6 +148,9 @@
 				8002835E263108B900D19EDF /* HomeViewController.swift */,
 				80472668263204F1007AAF43 /* TrendingViewController.swift */,
 				8047266D26320507007AAF43 /* PersonalizedUserViewController.swift */,
+				80051E1A2634FC7500A04C52 /* LoginViewController.swift */,
+				80051E202634FC9000A04C52 /* RegisterViewController.swift */,
+				80051E2B2635249B00A04C52 /* prefViewController.swift */,
 			);
 			path = Summarize_app;
 			sourceTree = "<group>";
@@ -416,12 +421,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				802615EF261931810090511E /* ViewController.swift in Sources */,
+				80051E1B2634FC7500A04C52 /* LoginViewController.swift in Sources */,
 				802615EB261931810090511E /* AppDelegate.swift in Sources */,
+				80051E212634FC9000A04C52 /* RegisterViewController.swift in Sources */,
 				80472669263204F1007AAF43 /* TrendingViewController.swift in Sources */,
 				802615ED261931810090511E /* SceneDelegate.swift in Sources */,
 				8002835F263108B900D19EDF /* HomeViewController.swift in Sources */,
 				8047266E26320507007AAF43 /* PersonalizedUserViewController.swift in Sources */,
+				80051E2C2635249B00A04C52 /* prefViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

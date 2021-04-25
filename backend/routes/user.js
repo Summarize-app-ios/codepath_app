@@ -1,6 +1,24 @@
 const userRouter = require("express").Router();
 let User = require('../models/UserSchema');
 
+userRouter.route('/login/:username/:password').get((req, res) => {
+
+    User.findOne({userName: req.params.username, password: req.params.password})
+    .then((user) => {
+        console.log(user);
+        if(user == null){
+            res.status(400).json("User not found");
+        } else {
+            res.status(200).json(user["_id"]);
+        }
+    })
+    .catch((error) => {
+        res.status(400).json("Invalid request");
+    })
+
+})
+
+
 
 userRouter.route('/createUser').post((req, res) => {
     const userName = req.body.userName;
@@ -18,8 +36,8 @@ userRouter.route('/createUser').post((req, res) => {
     });
 
     newUser.save()
-    .then(()=> {
-        res.status(200).json("new user added");
+    .then((user)=> {
+        res.status(200).json(user["_id"]);
     })
     .catch((error) => {
         console.log(error);
@@ -27,20 +45,6 @@ userRouter.route('/createUser').post((req, res) => {
 
 })
 
-
-userRouter.route('/login/:username:password').get((req, res) => {
-    let username = req.params.username;
-    let password = req.params.password;
-
-    User.findOne({username: username, password: password})
-    .then(() => {
-        res.status(200).json("user found");
-    })
-    .catch((error) => {
-        console.log(error);
-    })
-
-})
 
 
 module.exports = userRouter;

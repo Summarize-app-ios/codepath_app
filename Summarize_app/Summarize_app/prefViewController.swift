@@ -6,12 +6,16 @@
 //
 
 import UIKit
+import Alamofire
+
 
 class prefViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+            
+        let id = defaults.string(forKey: "ID")
+        print(id)
         // Do any additional setup after loading the view.
     }
     
