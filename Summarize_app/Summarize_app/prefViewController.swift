@@ -47,6 +47,7 @@ class prefViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    //this is for nur git pull
     @IBAction func onSubmit(_ sender: Any) {
         print(prefArray)
         performSegue(withIdentifier: "registersubmit", sender: nil)
