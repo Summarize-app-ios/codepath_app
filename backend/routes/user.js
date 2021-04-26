@@ -1,4 +1,5 @@
 const userRouter = require("express").Router();
+const { Mongoose } = require("mongoose");
 let User = require('../models/UserSchema');
 
 userRouter.route('/login/:username/:password').get((req, res) => {
@@ -37,12 +38,28 @@ userRouter.route('/createUser').post((req, res) => {
 
     newUser.save()
     .then((user)=> {
-        res.status(200).json(user["_id"]);
+        res.status(200).json(user);
     })
     .catch((error) => {
         console.log(error);
     })
 
+})
+
+userRouter.route('/updatePreferences').post((req, res) => {
+    let someID = req.body["id"];
+    console.log(someID);
+    User.findByIdAndUpdate(someID, {preferences: req.body.preferences}, {new: true})
+    .then(user => {
+        if(user == null){
+            res.status(400).json("User not found");
+        } else {
+            res.status(200).json(user);
+        }
+    })
+    .catch(error => {
+        res.status(400).json("error in query");
+    });
 })
 
 
