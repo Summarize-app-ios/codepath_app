@@ -7,6 +7,7 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 class LoginViewController: UIViewController {
 
@@ -31,15 +32,16 @@ class LoginViewController: UIViewController {
         
         
         // Making a GET request
-        
-        AF.request("http://127.0.0.1:5000/user/login/\(user)/\(pass)").responseJSON {response in
-//            debugPrint(response)
-            if let data = response.data {
-                let json = String(data: data, encoding: String.Encoding.utf8)
-                defaults.set(json, forKey: "ID")
-                print(json)
+        Alamofire.request("http://127.0.0.1:5000/user/login/\(user)/\(pass)").responseJSON { response in
+            
+            if response.result.isSuccess {
+                let userJSON : JSON = JSON(response.result.value!)
+                defaults.set(userJSON.rawString()!, forKey: "user")
+                self.performSegue(withIdentifier: "success", sender: nil)
+            } else {
+                print("Error: \(String(describing: response.result.error))")
             }
-            self.performSegue(withIdentifier: "success", sender: nil)
+            
         }
         
        

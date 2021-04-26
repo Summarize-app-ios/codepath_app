@@ -6,20 +6,23 @@
 //
 
 import UIKit
+import SwiftyJSON
+import Alamofire
 
 class TrendingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let user = JSON(defaults.value(forKey: "user") as! String)
+        print(user)
         // Do any additional setup after loading the view.
     }
     
     
     @IBAction func onLogout(_ sender: Any) {
-        defaults.set(0, forKey: "ID")
+        UserDefaults.resetStandardUserDefaults()
         performSegue(withIdentifier: "logout", sender: nil)
-        print(defaults.value(forKey: "ID"))
     }
     
 

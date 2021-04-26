@@ -39,13 +39,13 @@ class RegisterViewController: UIViewController {
         let params: [String: String] = ["userName":userName, "password": password, "email": email, "firstName": firstName, "lastName": lastName]
         let decoder = JSONDecoder()
         
-        AF.request("http://127.0.0.1:5000/user/createUser", method: .post, parameters: params, encoder: JSONParameterEncoder.default).responseJSON { response in
-            if let data = response.data {
-                let json = String(data: data, encoding: String.Encoding.utf8)
-                defaults.set(json, forKey: "ID")
-            }
-            self.performSegue(withIdentifier: "prefSuccess", sender: nil)
-        }
+//        AF.request("http://127.0.0.1:5000/user/createUser", method: .post, parameters: params, encoder: JSONParameterEncoder.default).responseJSON { response in
+//            if let data = response.data {
+//                let json = String(data: data, encoding: String.Encoding.utf8)
+//                defaults.set(json, forKey: "ID")
+//            }
+//            self.performSegue(withIdentifier: "prefSuccess", sender: nil)
+//        }
         
     }
     

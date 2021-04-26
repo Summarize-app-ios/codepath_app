@@ -6,7 +6,7 @@ target 'Summarize_app' do
   use_frameworks!
 
   # Pods for Summarize_app
-  pod 'Alamofire', '~> 5.0.0-rc.2'
+  pod 'Alamofire', '~> 4.0'
   pod 'TaggerKit'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'WaterfallGrid', '~> 1.0.0'

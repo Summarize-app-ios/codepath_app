@@ -8,6 +8,7 @@
 import UIKit
 import Alamofire
 import TaggerKit
+import SwiftyJSON
 
 class prefViewController: UIViewController {
     
@@ -43,10 +44,6 @@ class prefViewController: UIViewController {
         add(settagCollection, toView: tagView)
         add(gettagCollection, toView: getTags)
         
-        
-            
-        let id = defaults.string(forKey: "ID")
-        print(id)
         // Do any additional setup after loading the view.
     }
 

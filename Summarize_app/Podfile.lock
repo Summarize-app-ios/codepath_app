@@ -1,11 +1,11 @@
 PODS:
-  - Alamofire (5.0.5)
+  - Alamofire (4.9.1)
   - SwiftyJSON (4.3.0)
   - TaggerKit (0.6.1)
   - WaterfallGrid (1.0.1)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.0.0-rc.2)
+  - Alamofire (~> 4.0)
   - SwiftyJSON (~> 4.0)
   - TaggerKit
   - WaterfallGrid (~> 1.0.0)
@@ -18,11 +18,11 @@ SPEC REPOS:
     - WaterfallGrid
 
 SPEC CHECKSUMS:
-  Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   TaggerKit: e88422048a006b409a37b37f24785dfcca69b5b2
   WaterfallGrid: 0554a759d9a8aa136fc1769480ddb01bc6fb94b9
 
-PODFILE CHECKSUM: 84da4372416a7164828c33c5f080e6cf1fe26848
+PODFILE CHECKSUM: 6be407ce8ffe0847ff48a8cf38ee3f1936d7732b
 
 COCOAPODS: 1.10.1

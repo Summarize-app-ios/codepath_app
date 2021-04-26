@@ -9,7 +9,7 @@ userRouter.route('/login/:username/:password').get((req, res) => {
         if(user == null){
             res.status(400).json("User not found");
         } else {
-            res.status(200).json(user["_id"]);
+            res.status(200).json(user);
         }
     })
     .catch((error) => {
