@@ -15,13 +15,12 @@ class TrendingViewController: UIViewController {
         super.viewDidLoad()
 
         let user = JSON(defaults.value(forKey: "user") as! String)
-        print(user)
+//        print(user)
         // Do any additional setup after loading the view.
     }
     
     
     @IBAction func onLogout(_ sender: Any) {
-        UserDefaults.resetStandardUserDefaults()
         performSegue(withIdentifier: "logout", sender: nil)
     }
     

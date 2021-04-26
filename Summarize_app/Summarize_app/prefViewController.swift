@@ -49,8 +49,17 @@ class prefViewController: UIViewController {
 
     //this is for nur git pull
     @IBAction func onSubmit(_ sender: Any) {
-        print(prefArray)
-        performSegue(withIdentifier: "registersubmit", sender: nil)
+//        print(prefArray)
+        let id = defaults.value(forKey: "id")
+        let params: [String: Any] = ["id": id, "preferences": prefArray]
+//        print(params)
+        Alamofire.request("http://127.0.0.1:5000/user/updatePreferences", method: .post, parameters: params, encoding: JSONEncoding.default).responseJSON { response in
+            if response.result.isSuccess {
+                let userJSON : JSON = JSON(response.result.value!)
+                print(userJSON)
+                self.performSegue(withIdentifier: "registersubmit", sender: nil)
+            }
+        }
     }
     
     

@@ -7,6 +7,7 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 let defaults = UserDefaults.standard
 
@@ -37,15 +38,26 @@ class RegisterViewController: UIViewController {
         let lastName = lastnameField.text!
         
         let params: [String: String] = ["userName":userName, "password": password, "email": email, "firstName": firstName, "lastName": lastName]
-        let decoder = JSONDecoder()
         
-//        AF.request("http://127.0.0.1:5000/user/createUser", method: .post, parameters: params, encoder: JSONParameterEncoder.default).responseJSON { response in
-//            if let data = response.data {
-//                let json = String(data: data, encoding: String.Encoding.utf8)
-//                defaults.set(json, forKey: "ID")
+//        Alamofire.request("http://127.0.0.1:5000/user/createUser", method: .post, parameters: params, encoder: JSONParameterEncoder.default)
+//            .responseJSON { request, response, JSON, error in
+//                print(response)
+//                print(JSON)
+//                print(error)
 //            }
-//            self.performSegue(withIdentifier: "prefSuccess", sender: nil)
-//        }
+        
+        Alamofire.request("http://127.0.0.1:5000/user/createUser", method: .post, parameters: params, encoding: JSONEncoding.default).responseJSON { response in
+            if response.result.isSuccess {
+                let userJSON : JSON = JSON(response.result.value!)
+                let id = userJSON["_id"].stringValue
+                defaults.set(id, forKey: "id")
+//                defaults.set(userJSON.rawString()!, forKey: "user")
+                self.performSegue(withIdentifier: "prefSuccess", sender: nil)
+            } else {
+                print("Error: \(String(describing: response.result.error))")
+            }
+            
+        }
         
     }
     

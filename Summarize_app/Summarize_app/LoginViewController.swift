@@ -18,7 +18,12 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        UserDefaults.resetStandardUserDefaults()
         // Do any additional setup after loading the view.
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UserDefaults.resetStandardUserDefaults()
     }
     
     @IBAction func signUp(_ sender: Any) {
@@ -36,6 +41,8 @@ class LoginViewController: UIViewController {
             
             if response.result.isSuccess {
                 let userJSON : JSON = JSON(response.result.value!)
+//                print(userJSON)
+//                print(userJSON["_id"].stringValue)
                 defaults.set(userJSON.rawString()!, forKey: "user")
                 self.performSegue(withIdentifier: "success", sender: nil)
             } else {
