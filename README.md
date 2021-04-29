@@ -183,3 +183,6 @@ router.get('/preferences:userID', async (req, res, next) => {
 
 ## Milestone 1
 <img src='http://g.recordit.co/K57Xa5xRlW.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## Milestone 2
+<img src='http://g.recordit.co/JoPVx1VBwn.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
