@@ -1,31 +1,22 @@
 //
-//  TrendingViewController.swift
+//  SummarizedViewController.swift
 //  Summarize_app
 //
-//  Created by Ahamed Arif on 4/22/21.
+//  Created by Ahamed Arif on 5/5/21.
 //
 
 import UIKit
-import SwiftyJSON
-import Alamofire
 
-class TrendingViewController: UIViewController {
+class SummarizedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let user = JSON(defaults.value(forKey: "user") as! String)
-//        print(user)
         // Do any additional setup after loading the view.
     }
     
-    
-    @IBAction func onLogout(_ sender: Any) {
-        performSegue(withIdentifier: "logout", sender: nil)
-    }
-    
-    @IBAction func btnClick(_ sender: Any) {
-        performSegue(withIdentifier: "onclick", sender: nil)
+    @IBAction func doneBtn(_ sender: Any) {
+        performSegue(withIdentifier: "done", sender: nil)
     }
     
     /*

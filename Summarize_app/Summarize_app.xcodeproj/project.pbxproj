@@ -13,6 +13,8 @@
 		80051E1B2634FC7500A04C52 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80051E1A2634FC7500A04C52 /* LoginViewController.swift */; };
 		80051E212634FC9000A04C52 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80051E202634FC9000A04C52 /* RegisterViewController.swift */; };
 		80051E2C2635249B00A04C52 /* prefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80051E2B2635249B00A04C52 /* prefViewController.swift */; };
+		801200ED2643724B002B42F1 /* SummarySettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801200EC2643724B002B42F1 /* SummarySettingViewController.swift */; };
+		801200EF26437304002B42F1 /* SummarizedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801200EE26437304002B42F1 /* SummarizedViewController.swift */; };
 		802615EB261931810090511E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802615EA261931810090511E /* AppDelegate.swift */; };
 		802615ED261931810090511E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802615EC261931810090511E /* SceneDelegate.swift */; };
 		802615F2261931810090511E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 802615F0261931810090511E /* Main.storyboard */; };
@@ -53,6 +55,8 @@
 		80051E1A2634FC7500A04C52 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		80051E202634FC9000A04C52 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		80051E2B2635249B00A04C52 /* prefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prefViewController.swift; sourceTree = "<group>"; };
+		801200EC2643724B002B42F1 /* SummarySettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummarySettingViewController.swift; sourceTree = "<group>"; };
+		801200EE26437304002B42F1 /* SummarizedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummarizedViewController.swift; sourceTree = "<group>"; };
 		802615E7261931810090511E /* Summarize_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Summarize_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		802615EA261931810090511E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		802615EC261931810090511E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 				80051E1A2634FC7500A04C52 /* LoginViewController.swift */,
 				80051E202634FC9000A04C52 /* RegisterViewController.swift */,
 				80051E2B2635249B00A04C52 /* prefViewController.swift */,
+				801200EC2643724B002B42F1 /* SummarySettingViewController.swift */,
+				801200EE26437304002B42F1 /* SummarizedViewController.swift */,
 			);
 			path = Summarize_app;
 			sourceTree = "<group>";
@@ -426,9 +432,11 @@
 				80051E212634FC9000A04C52 /* RegisterViewController.swift in Sources */,
 				80472669263204F1007AAF43 /* TrendingViewController.swift in Sources */,
 				802615ED261931810090511E /* SceneDelegate.swift in Sources */,
+				801200EF26437304002B42F1 /* SummarizedViewController.swift in Sources */,
 				8002835F263108B900D19EDF /* HomeViewController.swift in Sources */,
 				8047266E26320507007AAF43 /* PersonalizedUserViewController.swift in Sources */,
 				80051E2C2635249B00A04C52 /* prefViewController.swift in Sources */,
+				801200ED2643724B002B42F1 /* SummarySettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
