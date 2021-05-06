@@ -33,9 +33,8 @@ Original App Design Project - README Template
 * [x] [user login page]
 * [x] [trending page]
 * [x] [personilized user page]
-* [ ] [import media page]
-* [ ] [summerizer page (that has setting to summerizes the media)]
-* [ ] [summerized page (that displayes the media summarized)]
+* [x] [summerizer page (that has setting to summerizes the media)]
+* [x] [summerized page (that displayes the media summarized)]
 
 
 **Optional Nice-to-have Stories**
@@ -45,6 +44,7 @@ Original App Design Project - README Template
 * [podcast tab]
 * [comment section]
 * [setting page]
+* [import media page]
 
 ### 2. Screen Archetypes
 
@@ -186,3 +186,7 @@ router.get('/preferences:userID', async (req, res, next) => {
 
 ## Milestone 2
 <img src='http://g.recordit.co/JoPVx1VBwn.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## Milestone 3
+<img src='http://g.recordit.co/kRPrpqOnxY.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
