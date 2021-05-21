@@ -24,6 +24,7 @@
 		8026160D261931820090511E /* Summarize_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8026160C261931820090511E /* Summarize_appUITests.swift */; };
 		80472669263204F1007AAF43 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80472668263204F1007AAF43 /* TrendingViewController.swift */; };
 		8047266E26320507007AAF43 /* PersonalizedUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8047266D26320507007AAF43 /* PersonalizedUserViewController.swift */; };
+		808B049F26576AA0004E7CEE /* favViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808B049E26576AA0004E7CEE /* favViewController.swift */; };
 		84D1BA148483FD000EE33E57 /* Pods_Summarize_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7AC2205E859A1678518EFD /* Pods_Summarize_appTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		8026160E261931820090511E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80472668263204F1007AAF43 /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
 		8047266D26320507007AAF43 /* PersonalizedUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizedUserViewController.swift; sourceTree = "<group>"; };
+		808B049E26576AA0004E7CEE /* favViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favViewController.swift; sourceTree = "<group>"; };
 		8329F8AFEEFE39E48A26DC53 /* Pods-Summarize_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Summarize_app.release.xcconfig"; path = "Target Support Files/Pods-Summarize_app/Pods-Summarize_app.release.xcconfig"; sourceTree = "<group>"; };
 		D8A46D26CD0CCDF6B3A70FD4 /* Pods_Summarize_app_Summarize_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Summarize_app_Summarize_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7AC2205E859A1678518EFD /* Pods_Summarize_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Summarize_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +159,7 @@
 				80051E2B2635249B00A04C52 /* prefViewController.swift */,
 				801200EC2643724B002B42F1 /* SummarySettingViewController.swift */,
 				801200EE26437304002B42F1 /* SummarizedViewController.swift */,
+				808B049E26576AA0004E7CEE /* favViewController.swift */,
 			);
 			path = Summarize_app;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				8002835F263108B900D19EDF /* HomeViewController.swift in Sources */,
 				8047266E26320507007AAF43 /* PersonalizedUserViewController.swift in Sources */,
 				80051E2C2635249B00A04C52 /* prefViewController.swift in Sources */,
+				808B049F26576AA0004E7CEE /* favViewController.swift in Sources */,
 				801200ED2643724B002B42F1 /* SummarySettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
