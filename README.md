@@ -190,3 +190,8 @@ router.get('/preferences:userID', async (req, res, next) => {
 ## Milestone 3
 <img src='http://g.recordit.co/kRPrpqOnxY.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+## Milestone 4&5
+<img src='http://g.recordit.co/j6DPRvsHG4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## Final Walkthrough video location:
+https://drive.google.com/drive/folders/16zR0dGIU1BPfOavqfTYawhaKJcm1HqMw?usp=sharing
